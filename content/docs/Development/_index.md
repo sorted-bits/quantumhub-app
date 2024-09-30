@@ -1,6 +1,7 @@
 ---
 title: Development
 type: docs
+weight: 1
 ---
 
 Currently there are two example devices available:

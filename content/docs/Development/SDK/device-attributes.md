@@ -29,6 +29,13 @@ export interface BaseAttribute {
 }
 ```
 
+### `ButtonAttribute`
+```typescript
+export interface ButtonAttribute extends BaseAttribute {
+  type: DeviceType.button;
+}
+```
+
 ### `SceneAttribute`
 
 ```typescript
