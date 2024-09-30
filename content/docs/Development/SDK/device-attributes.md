@@ -34,7 +34,6 @@ export interface BaseAttribute {
 ```typescript
 export interface SceneAttribute extends BaseAttribute {
   type: DeviceType.scene;
-  payload_on: string;
 }
 ```
 
@@ -50,8 +49,6 @@ export interface DeviceTrackerAttribute extends BaseAttribute {
 ```typescript
 export interface SwitchAttribute extends BaseAttribute {
   type: DeviceType.switch;
-  payload_on: string;
-  payload_off: string;
   optimistic: boolean;
 }
 ```
@@ -84,7 +81,5 @@ export interface ClimateAttribute extends BaseAttribute {
   has_swingmode: boolean;
   has_presetmode: boolean;
   has_humidity_control: boolean;
-  payload_on: string;
-  payload_off: string;
 }
 ```
