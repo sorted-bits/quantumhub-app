@@ -2,6 +2,7 @@
 title: Create a climate device
 type: docs
 weight: 3
+draft: true
 ---
 
 {{< callout type="warning" >}}
