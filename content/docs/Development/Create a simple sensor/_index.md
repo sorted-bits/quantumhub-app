@@ -4,8 +4,10 @@ type: docs
 weight: 2
 ---
 
+{{< callout type="info" >}}
 **Really basic example**  
 This example is really basic and only shows the absolute basics of how to create a simple sensor.
+{{< /callout >}}
 
 ## Prerequisites
 

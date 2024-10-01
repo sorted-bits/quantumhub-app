@@ -4,8 +4,10 @@ type: docs
 weight: 3
 ---
 
+{{< callout type="warning" >}}
 **Work in progress**  
-This example is not complete and is still a work in progress. During the development of QuantumHub it became clear that the climate device is a very complex device, with a lot of features. The example below is the minimal working example.
+This example is not complete and is still a work in progress. During the development of QuantumHub it became clear that the climate device is a very complex device, with a lot of features. The example below is **incomplete**.
+{{< /callout >}}
 
 The `test-device` repository contains an example climate device, which can be used as a starting point for creating your own climate device. It uses some basic attributes, which I will explain here.
 
