@@ -1,7 +1,7 @@
 ---
 title: SDK
 type: docs
-weight: 1
+weight: 4
 ---
 
 # SDK
