@@ -1,6 +1,6 @@
 baseURL: 'https://quantumhub.app/'
 languageCode: en-us
-title: QuantumHub.app
+title: QuantumHub
 
 module:
   imports:
@@ -8,7 +8,7 @@ module:
 
 params:
   theme:
-    default: dark
+    default: system
 
 menu:
   main:
