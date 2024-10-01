@@ -30,7 +30,7 @@ package:
   version: 1.0.0
   description: <Your description of your device>
   author: <Your name>
-  entry: example-sensor/example-sensor.ts
+  entry: example-sensor.ts
 
 attributes:
   temperature:
@@ -112,3 +112,22 @@ class ExampleSensor implements Device {
 
 export default ExampleSensor;
 ```
+
+## Updating the QuantumHub configuration
+
+Make sure you copy the `example-sensor` folder to the `packages` folder of QuantumHub.
+
+During the [installation of QuantumHub](/install), you created a [configuration file](/docs/Development/Configuration). Open the file and add your device to the `packages` section.
+
+```yaml
+packages:
+  root: ./packages
+  configuration:
+    - package: example-sensor
+      identifier: random-sensor
+      name: My first random sensor
+```
+
+## Restart
+
+Restart the QuantumHub server.
