@@ -4,8 +4,6 @@ type: docs
 weight: 3
 ---
 
-# Attributes
-
 ### `BaseAttribute`
 
 ```typescript

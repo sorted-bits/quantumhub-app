@@ -4,12 +4,8 @@ type: docs
 weight: 2
 ---
 
-# Create a simple sensor
-
-{{< hint info >}}
 **Really basic example**  
 This example is really basic and only shows the absolute basics of how to create a simple sensor.
-{{< /hint >}}
 
 ## Prerequisites
 

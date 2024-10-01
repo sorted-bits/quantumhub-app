@@ -3,9 +3,6 @@ title: Device
 type: docs
 weight: 1
 ---
-
-# Device
-
 ## Required methods
 
 ### `init(provider: Provider): Promise<boolean>;`  

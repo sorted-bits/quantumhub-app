@@ -4,8 +4,6 @@ type: docs
 weight: 4
 ---
 
-# SDK
-
 To build your own device, you can use the SDK. This SDK defines a couple of interfaces that you need to implement.
 
 ## Installation

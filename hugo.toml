@@ -1,5 +1,0 @@
-baseURL = 'https://quantumhub.app/'
-languageCode = 'en-us'
-title = 'QuantumHub.app'
-
-theme = "hugo-book"

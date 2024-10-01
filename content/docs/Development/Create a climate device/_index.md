@@ -4,12 +4,8 @@ type: docs
 weight: 3
 ---
 
-# Create a climate device
-
-{{< hint danger >}}
 **Work in progress**  
 This example is not complete and is still a work in progress. During the development of QuantumHub it became clear that the climate device is a very complex device, with a lot of features. The example below is the minimal working example.
-{{< /hint >}}
 
 The `test-device` repository contains an example climate device, which can be used as a starting point for creating your own climate device. It uses some basic attributes, which I will explain here.
 

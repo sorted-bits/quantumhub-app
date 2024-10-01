@@ -1,6 +1,6 @@
 ---
-title: SDK
-type: docs
+title: QuantumHub
+type: default
 ---
 
 ## Purpose

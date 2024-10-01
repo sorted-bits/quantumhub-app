@@ -4,8 +4,6 @@ type: docs
 weight: 2
 ---
 
-# Provider
-
 ## Methods
 
 ### `setAttributeValue(attribute: string, value: any): Promise<void>;`
