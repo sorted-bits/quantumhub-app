@@ -6,7 +6,7 @@ weight: 2
 
 {{< callout type="info" >}}
 **Really basic example**  
-This example is really basic and only shows the absolute basics of how to create a simple sensor.
+This example is really simple and only shows the absolute basics of how to create a sensor. This device will publish a random temperature value every 5 seconds.
 {{< /callout >}}
 
 ## Prerequisites
