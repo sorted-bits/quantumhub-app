@@ -12,11 +12,16 @@ params:
 
 menu:
   main:
-    - name: Development
-      url: /docs/development
     - name: Installation
       url: /docs/installation
+      weight: 1
+    - name: Development
+      url: /docs/development
+      weight: 2
+    - name: SDK
+      url: /docs/sdk
+      weight: 3
   sidebar:
     - name: "Github ↗"
       url: "https://github.com/sorted-bits"
-      weight: 3
+      weight: 99
