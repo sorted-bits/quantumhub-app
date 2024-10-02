@@ -38,3 +38,7 @@ This is the configuration file for QuantumHub. An example configuration can be f
 **Path:** `/home/node/packages`  
 
 This is the folder containing the packages you want to use. There is also a way to specify a custom path in the configuration file, see [Configuration](/docs/installation/configuration/). You can either use the included `/home/node/packages` or specify a custom path. The default path includes an `example-package`.
+
+#### Ports
+
+**3000:** The port the webserver listens to, this exposes the QuantumHub API and the QuantumHub Webinterface.
