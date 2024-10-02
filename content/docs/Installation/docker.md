@@ -3,13 +3,12 @@ title: Docker
 type: docs
 weight: 1
 ---
-
 {{< tabs items="Easy,Advanced" >}}
 
 {{< tab >}}
 ### Prerequisites
 
-- Install [Docker](https://docs.docker.com/get-docker/)
+- Install <i class="fa-brands fa-docker"></i> [Docker](https://docs.docker.com/get-docker/)
 - Install [Docker Compose](https://docs.docker.com/compose/install/)
 
 {{% steps %}}

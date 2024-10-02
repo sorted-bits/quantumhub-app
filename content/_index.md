@@ -1,7 +1,6 @@
 ---
 title: QuantumHub
 type: default
-toc: false
 ---
 
 ### Purpose

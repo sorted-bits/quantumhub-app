@@ -10,8 +10,8 @@ weight: 2
 
 ### Prerequisites
 
-- Install [Node.js](https://nodejs.org/en/download/).
-- Install [Git](https://git-scm.com/downloads).
+- Install <i class="fa-brands fa-node-js"></i> [Node.js](https://nodejs.org/en/download/).
+- Install <i class="fa-brands fa-square-git"></i> [Git](https://git-scm.com/downloads).
 - Configure the [Home Assistant MQTT integration](https://www.home-assistant.io/integrations/mqtt/).
 
 {{% steps %}}

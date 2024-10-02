@@ -1,13 +1,13 @@
 ---
 title: Documentation
-type: docs
+type: default
 ---
 
-## Installation
+<i class="fa-duotone fa-solid fa-user"></i>
 
-QuantumHub is available on Docker Hub but can also be run locally using node.js.
-
-## Development
-
-[Create a simple sensor](/docs/development/create-a-simple-sensor)
-
+{{< cards >}}
+  {{< card link="installation" title="Installation" image="/images/docker.png">}}
+  {{< card link="development" title="Development" image="/images/code.png">}}
+  {{< card link="sdk" title="SDK" >}}
+  {{< card link="webinterface" image="/docs/webinterface/package-details.png" title="Webinterface" >}}
+{{< /cards >}}
