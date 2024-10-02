@@ -99,7 +99,4 @@ When the target temperature of a climate attribute is changed, this method is ca
 
 When the target humidity of a climate attribute is changed, this method is called. The supplied parameter contains the changed [`ClimateAttribute`](/docs/development/sdk/device-attributes/#climateattribute) and the new value.
 
-## Github
-
-[device.ts](https://github.com/sorted-bits/quantumhub-sdk/blob/main/src/interfaces/device.ts).
 
