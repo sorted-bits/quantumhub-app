@@ -4,6 +4,58 @@ type: docs
 weight: 1
 ---
 
+{{< tabs items="Easy,Advanced" >}}
+
+{{< tab >}}
+### Prerequisites
+
+- Install [Docker](https://docs.docker.com/get-docker/)
+- Install [Docker Compose](https://docs.docker.com/compose/install/)
+
+{{% steps %}}
+
+### Create the docker-compose.yml file
+
+```yaml
+---
+version: "2.1"
+services:
+  quantumhub:
+    image: sortedbit/quantumhub:latest
+    container_name: quantumhub
+    environment:
+      - TZ=Etc/UTC
+    ports:
+      - 3000:3000
+    volumes:
+      - ./config.yaml:/home/node/app/config.yaml
+    restart: always
+```
+
+### Grab the example configuration file
+
+```bash
+wget https://raw.githubusercontent.com/sorted-bits/quantumhub/main/config.yaml.example -O config.yaml
+```
+
+### Update the configuration file
+
+Edit the configuration file so it matches your setup.
+
+### Run the container
+
+```bash
+docker compose up
+```
+
+### Access the Webinterface
+
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+
+{{% /steps %}}
+{{< /tab >}}
+
+{{< tab >}}
 ### Dockerhub
 
 QuantumHub is available on Dockerhub as [sortedbit/quantumhub](https://hub.docker.com/repository/docker/sortedbit/quantumhub/general).
@@ -14,7 +66,7 @@ QuantumHub is available on Dockerhub as [sortedbit/quantumhub](https://hub.docke
 ---
 version: "2.1"
 services:
-  sabnzbd:
+  quantumhub:
     image: sortedbit/quantumhub:latest
     container_name: quantumhub
     environment:
@@ -42,3 +94,8 @@ This is the folder containing the packages you want to use. There is also a way 
 #### Ports
 
 **3000:** The port the webserver listens to, this exposes the QuantumHub API and the QuantumHub Webinterface.
+
+{{< /tab >}}
+
+
+{{< /tabs >}}
