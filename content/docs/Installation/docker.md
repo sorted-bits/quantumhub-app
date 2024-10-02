@@ -32,7 +32,7 @@ services:
 ##### Configuration file
 **Path:** `/home/node/app/config.yaml`  
 
-This is the configuration file for QuantumHub. A default configuration file is provided, but adding this as a volume allows you to override the default configuration.
+This is the configuration file for QuantumHub. An example configuration can be found [here](https://github.com/sorted-bits/quantumhub/blob/main/config.yaml.example).
 
 ##### Packages folder
 **Path:** `/home/node/packages`  
