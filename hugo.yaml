@@ -14,15 +14,12 @@ params:
 
 menu:
   main:
-    - name: Installation
-      url: /docs/installation
+    - name: Documentation
+      url: /docs/
       weight: 1
-    - name: Development
-      url: /docs/development
+    - name: Available Packages
+      url: /available-packages/
       weight: 2
-    - name: SDK
-      url: /docs/sdk
-      weight: 3
   sidebar:
     - name: "Github ↗"
       url: "https://github.com/orgs/sorted-bits/repositories"
