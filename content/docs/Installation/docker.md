@@ -39,7 +39,7 @@ wget https://raw.githubusercontent.com/sorted-bits/quantumhub/main/config.yaml.e
 
 ### Update the configuration file
 
-Edit the configuration file so it matches your setup.
+Edit [the configuration file](/docs/installation/configuration/) so it matches your setup.
 
 ### Run the container
 

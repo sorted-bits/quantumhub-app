@@ -35,13 +35,19 @@ npm install
 cp config.yaml.example config.yaml
 ```
 
-Edit the configuration file to your liking.
+### Update the configuration file
+
+Edit [the configuration file](/docs/installation/configuration/) so it matches your setup.
 
 ### Start the server
 
 ```bash
 npm start
 ```
+
+### Access the Webinterface
+
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
 {{% /steps %}}
 
