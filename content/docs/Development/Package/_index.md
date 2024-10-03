@@ -91,7 +91,8 @@ attributes:
 The key used for each attribute should be unique within your configuration file.
 {{< /callout >}}
 
-For the description of the attributes, please refer to the [Attributes](/docs/development/sdk/device-attributes) page.
+For the description of the attributes, please refer to the [Attributes](/docs/sdk/device-attributes) page.
+
 ### Example
 
-For an example on how to create a simple sensor, check out the [Create a simple sensor](/docs/development/create-a-simple-sensor) example.
+For an example on how to create a simple sensor, check out the [Create a simple sensor](/docs/development/create-a-simple-sensor/) example.

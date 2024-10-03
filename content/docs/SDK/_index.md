@@ -16,7 +16,7 @@ npm install quantumhub-sdk
 ## Interfaces
 
 ### Device
-Your device needs to implement the [`Device`](/docs/development/sdk/device/) interface. This interface defines the basic structure of a device.
+Your device needs to implement the [`Device`](/docs/sdk/device/) interface. This interface defines the basic structure of a device.
 
 ## Github repository
 
