@@ -12,14 +12,14 @@ This example is really simple and only shows the absolute basics of how to creat
 ## Prerequisites
 
 - Install [Node.js](https://nodejs.org/en/download/)
-- Prepare a folder where you are going to create your device, e.g. `example-sensor`
+- Prepare a folder where you are going to create your package, e.g. `example-sensor`
   - Open a terminal in that folder.
   - Run `npm init -y` to create a `package.json` file.
   - Run `npm install quantumhub-sdk` to install the QuantumHub SDK.
   - Open the folder in your favorite IDE, I am using [Cursor](https://cursor.sh/).
 
 ## Create a configuration file
-Every device needs a configuration file, which defines the package and the attributes a device has available. In this example we will create a simple temperature sensor. Check out the [configuration reference](../reference/configuration) for more information.
+Every package needs a configuration file, which defines the package itself and the attributes a package has available. In this example we will create a simple temperature sensor. Check out the [package reference](/docs/development/package/) for more information.
 
 Create a file called `example-sensor.yaml` and add the following content:
 ```yaml
@@ -115,7 +115,7 @@ export default ExampleSensor;
 
 Make sure you copy the `example-sensor` folder to the `packages` folder of QuantumHub.
 
-During the [installation of QuantumHub](/install), you created a [configuration file](/docs/Development/Configuration). Open the file and add your device to the `packages` section.
+During the [installation of QuantumHub](/docs/installation/), you created a [configuration file](/docs/installation/configuration/). Open the file and add your device to the `packages` section.
 
 ```yaml
 packages:
