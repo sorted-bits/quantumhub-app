@@ -1,6 +1,7 @@
 {
     "packages": [
         {
+            "identifier": "growatt-mid-tl",
             "name": "Growatt MID TL series",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
             "config": "growatt-tl.yaml",
@@ -9,6 +10,7 @@
             "version": "1.0.0"
         },
         {
+            "identifier": "growatt-mod-tl3-x",
             "name": "Growatt MOD TL3-X series",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
             "config": "growatt-tl3-x.yaml",
@@ -17,7 +19,8 @@
             "version": "1.0.1"
         },
         {
-            "name": "Afore AF XK-TH Three Phase Hybrid Inverter Serie",
+            "identifier": "afore-af-xk-th",
+            "name": "Afore AF XK-TH Three Phase Hybrid Inverter Series",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
             "config": "afore.yaml",
             "description": "Add support for the Afore AF XK-TH Three Phase Hybrid Inverter Series",
