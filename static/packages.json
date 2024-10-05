@@ -22,7 +22,7 @@
             "identifier": "growatt-mid-tl",
             "name": "Growatt MID TL series",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
-            "config": "growatt-tl.yaml",
+            "config": "growatt-mid-tl.yaml",
             "description": "Add support for the Growatt MID TL series of inverters.",
             "author": "Wim Haanstra",
             "version": "1.0.0"
@@ -31,7 +31,7 @@
             "identifier": "growatt-mod-tl3-x",
             "name": "Growatt MOD TL3-X series",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
-            "config": "growatt-tl3-x.yaml",
+            "config": "growatt-mod-tl3-x.yaml",
             "description": "Add support for the Growatt MOD TL3-X series of inverters.",
             "author": "Wim Haanstra",
             "version": "1.0.1"
