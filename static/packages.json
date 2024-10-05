@@ -1,6 +1,24 @@
 {
     "packages": [
         {
+            "identifier": "example-device",
+            "name": "Example Device",
+            "repository": "https://github.com/sorted-bits/example-package",
+            "config_file": "example-device.yaml",
+            "description": "Example package for testing",
+            "author": "Wim Haanstra",
+            "version": "1.0.0"
+        },
+        {
+            "identifier": "example-climate",
+            "name": "Example Climate",
+            "repository": "https://github.com/sorted-bits/example-package",
+            "config_file": "example-climate.yaml",
+            "description": "Example climate package for testing",
+            "author": "Wim Haanstra",
+            "version": "1.0.0"
+        },
+        {
             "identifier": "growatt-mid-tl",
             "name": "Growatt MID TL series",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
