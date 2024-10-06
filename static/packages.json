@@ -30,7 +30,7 @@
             "config_file": "growatt-mod-tl3-x.yaml",
             "description": "Add support for the Growatt MOD TL3-X series of inverters.",
             "author": "Wim Haanstra",
-            "version": "1.0.1"
+            "version": "1.0.0"
         },
         {
             "name": "afore-af-xk-th",
@@ -38,7 +38,7 @@
             "config_file": "afore-af-xk-th.yaml",
             "description": "Add support for the Afore AF XK-TH Three Phase Hybrid Inverter Series",
             "author": "Wim Haanstra",
-            "version": "1.0.1"
+            "version": "1.0.0"
         }
     ]
 }
