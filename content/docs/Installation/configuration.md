@@ -29,18 +29,23 @@ mqtt:
 
 storage:
   file: 'storage.sqlite'
+  dependencies: 'packages'
+
+dependencies:
+  - repository: https://github.com/sorted-bits/example-package
+    file: example-device.yaml
+  - repository: https://github.com/sorted-bits/example-package
+    file: example-climate.yaml  
 
 packages:
-  root: ./packages
-  configuration:
-    - package: example-device
-      identifier: new_york_clock
-      name: New York Clock
-      timezone: America/New_York
-    - package: example-device
-      identifier: amsterdam_clock
-      name: Amsterdam Clock
-      timezone: Europe/Amsterdam
+  - package: example-device
+    identifier: new_york_clock
+    name: New York Clock
+    timezone: America/New_York
+  - package: example-device
+    identifier: amsterdam_clock
+    name: Amsterdam Clock
+    timezone: Europe/Amsterdam
 
 homeassistant:
 # availability: true # Whether to publish availability messages
@@ -142,29 +147,36 @@ The base topic to use for MQTT. *Default: `quantumhub`*
 ```yaml
 storage:
   file: 'storage.sqlite'
+  dependencies: 'packages'
 ```
 
 #### `file`
 The file to use for sqlite storage. This file should only contain data that should be persisted between restarts. Deleting this file will cause the data to be reset. *Default: `storage.sqlite`*. 
 
+#### `dependencies`
+The path to the folder where the dependencies are installed to. *Default: `packages`*
+
+## dependencies
+
+```yaml
+dependencies:
+  - repository: https://github.com/sorted-bits/example-package
+    file: example-device.yaml
+  - repository: https://github.com/sorted-bits/example-package
+    file: example-climate.yaml  
+```
+
+The `dependencies` section is used to specify the dependencies for the QuantumHub instance. These dependencies are installed to the `dependencies` storage folder using `git clone`.
+
 ## packages
 
 ```yaml
 packages:
-  root: packages
-  configuration:
-    - package: example-device
-      identifier: new_york_clock
-      name: New York Clock
-      # config_file: '<other path to config file>'
-      timezone: America/New_York
+  - package: example-device
+    identifier: new_york_clock
+    name: New York Clock
+    timezone: America/New_York
 ```      
-
-#### `root`
-The root folder where the packages are located. *Default: `packages`*
-
-#### `configuration`
-The configuration for the packages. This is an array of package configurations. 
 
 ##### `package`
 This should be the name of the package to use for this device.

@@ -117,13 +117,13 @@ Make sure you copy the `example-sensor` folder to the `packages` folder of Quant
 
 During the [installation of QuantumHub](/docs/installation/), you created a [configuration file](/docs/installation/configuration/). Open the file and add your device to the `packages` section.
 
+After creating the package, you need to push it to Github, so QuantumHub can install it. Update the `dependencies` [section of the configuration file](/docs/installation/configuration/#dependencies-1) with the repository and config file of your package.
+
 ```yaml
 packages:
-  root: ./packages
-  configuration:
-    - package: example-sensor
-      identifier: random-sensor
-      name: My first random sensor
+  - package: example-sensor
+    identifier: random-sensor
+    name: My first random sensor
 ```
 
 ## Restart
