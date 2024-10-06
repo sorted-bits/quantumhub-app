@@ -35,7 +35,7 @@
         {
             "name": "afore-af-xk-th",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
-            "config_file": "afore.yaml",
+            "config_file": "afore-af-xk-th.yaml",
             "description": "Add support for the Afore AF XK-TH Three Phase Hybrid Inverter Series",
             "author": "Wim Haanstra",
             "version": "1.0.1"
