@@ -19,7 +19,7 @@
         {
             "name": "growatt-mid-tl",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
-            "config": "growatt-mid-tl.yaml",
+            "config_file": "growatt-mid-tl.yaml",
             "description": "Add support for the Growatt MID TL series of inverters.",
             "author": "Wim Haanstra",
             "version": "1.0.0"
@@ -27,7 +27,7 @@
         {
             "name": "growatt-mod-tl3-x",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
-            "config": "growatt-mod-tl3-x.yaml",
+            "config_file": "growatt-mod-tl3-x.yaml",
             "description": "Add support for the Growatt MOD TL3-X series of inverters.",
             "author": "Wim Haanstra",
             "version": "1.0.1"
@@ -35,7 +35,7 @@
         {
             "name": "afore-af-xk-th",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
-            "config": "afore.yaml",
+            "config_file": "afore.yaml",
             "description": "Add support for the Afore AF XK-TH Three Phase Hybrid Inverter Series",
             "author": "Wim Haanstra",
             "version": "1.0.1"
