@@ -1,8 +1,7 @@
 {
     "packages": [
         {
-            "identifier": "example-device",
-            "name": "Example Device",
+            "name": "example-device",
             "repository": "https://github.com/sorted-bits/example-package",
             "config_file": "example-device.yaml",
             "description": "Example package for testing",
@@ -10,8 +9,7 @@
             "version": "1.0.0"
         },
         {
-            "identifier": "example-climate",
-            "name": "Example Climate",
+            "name": "example-climate",
             "repository": "https://github.com/sorted-bits/example-package",
             "config_file": "example-climate.yaml",
             "description": "Example climate package for testing",
@@ -19,8 +17,7 @@
             "version": "1.0.0"
         },
         {
-            "identifier": "growatt-mid-tl",
-            "name": "Growatt MID TL series",
+            "name": "growatt-mid-tl",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
             "config": "growatt-mid-tl.yaml",
             "description": "Add support for the Growatt MID TL series of inverters.",
@@ -28,8 +25,7 @@
             "version": "1.0.0"
         },
         {
-            "identifier": "growatt-mod-tl3-x",
-            "name": "Growatt MOD TL3-X series",
+            "name": "growatt-mod-tl3-x",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
             "config": "growatt-mod-tl3-x.yaml",
             "description": "Add support for the Growatt MOD TL3-X series of inverters.",
@@ -37,8 +33,7 @@
             "version": "1.0.1"
         },
         {
-            "identifier": "afore-af-xk-th",
-            "name": "Afore AF XK-TH Three Phase Hybrid Inverter Series",
+            "name": "afore-af-xk-th",
             "repository": "https://github.com/sorted-bits/modbus-solarman",
             "config": "afore.yaml",
             "description": "Add support for the Afore AF XK-TH Three Phase Hybrid Inverter Series",
