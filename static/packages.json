@@ -6,7 +6,7 @@
             "config_file": "example-device.yaml",
             "description": "Example package for testing",
             "author": "Wim Haanstra",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         {
             "name": "example-climate",
