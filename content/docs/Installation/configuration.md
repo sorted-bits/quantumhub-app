@@ -34,8 +34,9 @@ storage:
 dependencies:
   - repository: https://github.com/sorted-bits/example-package
     file: example-device.yaml
-  - repository: https://github.com/sorted-bits/example-package
-    file: example-climate.yaml  
+  - example-climate
+  - repository: /Volumes/Projects/quantumhub/modules/modbus-solarman
+    file: growatt-mod-tl3-x.yaml
 
 packages:
   - package: example-device
@@ -162,11 +163,39 @@ The path to the folder where the dependencies are installed to. *Default: `packa
 dependencies:
   - repository: https://github.com/sorted-bits/example-package
     file: example-device.yaml
-  - repository: https://github.com/sorted-bits/example-package
-    file: example-climate.yaml  
+  - example-climate
+  - repository: /Volumes/Projects/quantumhub/modules/modbus-solarman
+    file: growatt-mod-tl3-x.yaml
 ```
 
-The `dependencies` section is used to specify the dependencies for the QuantumHub instance. These dependencies are installed to the `dependencies` storage folder using `git clone`.
+The `dependencies` section is used to specify the dependencies for the QuantumHub instance. There are 3 types of dependencies:
+
+1. **Git repository**
+
+```yaml
+  - repository: https://github.com/sorted-bits/example-package
+    file: example-device.yaml
+```
+
+When a repository is specified that does not start with `/`, it is assumed to be an online git repository. We will try to clone this repository to the `dependencies` folder using `git clone`.
+
+
+2. **Dependency from name**
+
+```yaml
+  - example-climate
+```
+
+When a dependency is specified by it's name only, we will try to resolve this package using the [online package registry](https://quantumhub.app/packages.json).
+
+3. **Local folder**
+
+```yaml 
+  - repository: /Volumes/Projects/quantumhub/modules/modbus-solarman
+    file: growatt-mod-tl3-x.yaml
+```
+
+When a repository is specified that starts with `/`, it is assumed to be a local folder. We will use this folder as the dependency and no installation will be performed.
 
 ## packages
 
