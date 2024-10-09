@@ -14,7 +14,7 @@
             "config_file": "example-climate.yaml",
             "description": "Example climate package for testing",
             "author": "Wim Haanstra",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         {
             "name": "growatt-mid-tl",
