@@ -14,18 +14,22 @@ weight: 2
 - Install <i class="fa-brands fa-square-git"></i> [Git](https://git-scm.com/downloads).
 - Configure the [Home Assistant MQTT integration](https://www.home-assistant.io/integrations/mqtt/).
 
+{{< tabs items="Backend,Frontend" >}}
+
+{{< tab >}}
+
 {{% steps %}}
 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/sorted-bits/quantumhub.git
+git clone https://github.com/sorted-bits/quantumhub-frontend.git
 ```
 
 ### Install dependencies
 
 ```bash
-cd quantumhub
+cd quantumhub-frontend
 npm install
 ```
 
@@ -45,9 +49,38 @@ Edit [the configuration file](/docs/installation/configuration/) so it matches y
 npm start
 ```
 
+{{% /steps %}}
+
+{{< /tab >}}
+
+{{< tab >}}
+
+{{% steps %}}
+
+### Clone the repository
+```bash
+git clone https://github.com/sorted-bits/quantumhub.git
+```
+
+### Install dependencies
+
+```bash
+cd quantumhub
+npm install
+```
+
+### Start the server
+
+```bash
+npm run start
+```
+
 ### Access the Webinterface
 
-Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+Open your browser and navigate to [http://localhost:3001](http://localhost:3001).
 
 {{% /steps %}}
 
+{{< /tab >}}
+
+{{< /tabs >}}

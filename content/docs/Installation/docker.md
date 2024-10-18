@@ -15,6 +15,12 @@ weight: 1
 
 ### Create the docker-compose.yml file
 
+There are a couple of things to consider when running QuantumHub in Docker.
+
+1. By default, Docker will assign an IP address to the container. This IP address is not guaranteed to be static, and it may change when the container is restarted.
+2. The frontend needs an environment variable pointing to the API. If you are using HTTPS for the frontend, you will also need to make sure the API is accessible over HTTPS.
+3. The QuantumHub API and Frontend do not contain any authentication, so make sure you do not expose them to the public internet.
+
 ```yaml
 ---
 version: "2.1"
@@ -29,6 +35,14 @@ services:
     volumes:
       - ./config.yaml:/home/node/app/config.yaml
     restart: always
+
+  quantumhub_frontend:
+    image: sortedbit/quantumhub-frontend:latest
+    container_name: quantumhub-frontend
+    ports:
+      - 3001:3001
+    environment:
+      - REACT_APP_API_URL=http://<IP-OF-BACKEND>:3000
 ```
 
 ### Grab the example configuration file
@@ -52,9 +66,11 @@ docker compose up
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
 {{% /steps %}}
+
 {{< /tab >}}
 
 {{< tab >}}
+
 ### Dockerhub
 
 QuantumHub is available on Dockerhub as [sortedbit/quantumhub](https://hub.docker.com/repository/docker/sortedbit/quantumhub/general).
@@ -76,6 +92,14 @@ services:
       - /your/config/file.yaml:/home/node/app/config.yaml
       - /your/packages/folder:/home/node/packages
     restart: always
+
+  quantumhub_frontend:
+    image: sortedbit/quantumhub-frontend:latest
+    container_name: quantumhub-frontend
+    ports:
+      - 3001:3001
+    environment:
+      - REACT_APP_API_URL=https://quantumhub-api.local
 ```
 
 #### Volumes
